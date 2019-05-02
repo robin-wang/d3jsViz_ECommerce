@@ -1,4 +1,4 @@
-Regions,RegionTypes,RegionCode,Year,Value
+Regions,group,RegionCode,Year,total_amount
 Beijing,municipality,4,2013,4877.7
 Tianjin,municipality,4,2013,930.8
 Hebei,coastal,2,2013,809.3

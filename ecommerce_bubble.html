@@ -7,190 +7,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="css/customise_style.css">
+    <link rel="stylesheet" href="css/forcebubble.css">
 
-    <style>
-      article, aside, details, figcaption, figure, footer, header, nav, section { display: block; }
-      audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-      audio:not([controls]) { display: none; }
-      [hidden] { display: none; }
-
-      html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-      body { margin: 0; font-size: 13px; line-height: 1.231; }
-      body, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
-      ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-      ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-      a { color: #00e; }
-      a:visited { color: #551a8b; }
-      a:hover { color: #06e; }
-      a:focus { outline: thin dotted; }
-      a:hover, a:active { outline: 0; }
-
-      abbr[title] { border-bottom: 1px dotted; }
-      b, strong { font-weight: bold; }
-      blockquote { margin: 1em 40px; }
-      dfn { font-style: italic; }
-      hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-      ins { background: #ff9; color: #000; text-decoration: none; }
-      mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-      pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
-      pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-      q { quotes: none; }
-      q:before, q:after { content: ""; content: none; }
-      small { font-size: 85%; }
-      sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-      sup { top: -0.5em; }
-      sub { bottom: -0.25em; }
-      ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-      dd { margin: 0 0 0 40px; }
-      nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-      img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-      svg:not(:root) { overflow: hidden; }
-      figure { margin: 0; }
-
-      form { margin: 0; }
-      fieldset { border: 0; margin: 0; padding: 0; }
-      label { cursor: pointer; }
-      legend { border: 0; *margin-left: -7px; padding: 0; }
-      button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-      button, input { line-height: normal; *overflow: visible; }
-      table button, table input { *overflow: auto; }
-      button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
-      input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-      input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-      input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-      button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-      textarea { overflow: auto; vertical-align: top; resize: vertical; }
-      input:valid, textarea:valid {  }
-      input:invalid, textarea:invalid { background-color: #f0dddd; }
-
-      table { border-collapse: collapse; border-spacing: 0; }
-      td { vertical-align: top; }
-
-      .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
-      .ir br { display: none; }
-      .hidden { display: none !important; visibility: hidden; }
-      .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-      .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-      .invisible { visibility: hidden; }
-      .clearfix:before, .clearfix:after { content: ""; display: table; }
-      .clearfix:after { clear: both; }
-      .clearfix { zoom: 1; }
-      /* ==|== media queries ====================================================== */
-      @media only screen and (min-width: 480px) {
-
-
-      }
-      @media only screen and (min-width: 768px) {
-
-      }
-
-      @media print {
-        * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
-        a, a:visited { text-decoration: underline; }
-        a[href]:after { content: " (" attr(href) ")"; }
-        abbr[title]:after { content: " (" attr(title) ")"; }
-        .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
-        pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-        thead { display: table-header-group; }
-        tr, img { page-break-inside: avoid; }
-        img { max-width: 100% !important; }
-        @page { margin: 0.5cm; }
-        p, h2, h3 { orphans: 3; widows: 3; }
-        h2, h3 { page-break-after: avoid; }
-      }
-    </style>
-    <style>
-      a, a:visited, a:active {
-        color: #444;
-      }
-      .container {
-        max-width: 900px;
-        margin: auto;
-      }
-      .button {
-        min-width: 130px;
-        padding: 4px 5px;
-        cursor: pointer;
-        text-align: center;
-        font-size: 13px;
-        border: 1px solid #e0e0e0;
-        text-decoration: none;
-      }
-      .button.active {
-        background: #000;
-        color: #fff;
-      }
-      #vis {
-        width: 940px;
-        height: 600px;
-        clear: both;
-        margin-bottom: 10px;
-      }
-      #toolbar {
-        margin-top: 10px;
-      }
-      .year {
-        font-size: 21px;
-        fill: #aaa;
-        cursor: default;
-      }
-      .tooltip {
-      	position: absolute;
-      	top: 100px;
-      	left: 100px;
-        -moz-border-radius:5px;
-      	border-radius: 5px;
-        border: 2px solid #000;
-        background: #fff;
-      	opacity: .9;
-        color: black;
-      	padding: 10px;
-      	width: 300px;
-      	font-size: 12px;
-      	z-index: 10;
-      }
-      .tooltip .title {
-      	font-size: 13px;
-      }
-      .tooltip .name {
-        font-weight:bold;
-      }
-      .footer {
-        text-align: center;
-      }
-    </style>
     <title>E-Commerce in China - Regional E-Commerce Consumption 2012-2017</title>
   </head>
 
   <body>
     <!-- navigation bar -->
-    <div class="custom-top">
-      <div class="custom-bar custom-white custom-card" id="myNavbar" style="min-width: 800px;">
-        <a href="index.html" class="custom-bar-item custom-button" style="letter-spacing:4px">HOME</a>
+    <div style="position:fixed;width:100%;z-index:1;top:0">
+      <div class="style-bar style-white style-card" id="myNavbar" style="min-width: 800px;">
+        <a href="index.html" class="style-bar-item style-button style-wide">HOME</a>
         <!-- Right-sided navbar links -->
-        <div class="custom-right custom-hide-small">
-          <a href="index.html#gallery" class="custom-bar-item custom-button">Gallery</a>
-          <a href="infrastructure_bubble.html" class="custom-bar-item custom-button"><i class="fa fa-user"></i> Infrastructure</a>
-          <a href="internet_multiline.html" class="custom-bar-item custom-button"><i class="fa fa-th"></i> Internet</a>
-          <a href="enterprise_sunburst.html" class="custom-bar-item custom-button"><i class="fa fa-th"></i> Business</a>
-          <a href="delivery_interactivestream.html" class="custom-bar-item custom-button"><i class="fa fa-th"></i> Delivery</a>
-          <a href="ecommerce_bubble.html" class="custom-bar-item custom-button"><i class="fa fa-usd"></i> E-Commerce</a>
-          <a href="ProjectInfo_Author.html" class="custom-bar-item custom-button"><i class="fa fa-envelope"></i> Author</a>
+        <div class="style-right style-hide-small">
+          <a href="index.html#gallery" class="style-bar-item style-button">Gallery</a>
+          <a href="infrastructure_bubble.html" class="style-bar-item style-button"><i class="fa fa-user"></i> Infrastructure</a>
+          <a href="internet_multiline.html" class="style-bar-item style-button"><i class="fa fa-th"></i> Internet</a>
+          <a href="enterprise_sunburst.html" class="style-bar-item style-button"><i class="fa fa-th"></i> Business</a>
+          <a href="delivery_interactivestream.html" class="style-bar-item style-button"><i class="fa fa-th"></i> Delivery</a>
+          <a href="ecommerce_bubble.html" class="style-bar-item style-button"><i class="fa fa-usd"></i> E-Commerce</a>
+          <a href="ProjectInfo_Author.html" class="style-bar-item style-button"><i class="fa fa-envelope"></i> Author</a>
         </div>
-        <a href="javascript:void(0)" class="custom-bar-item custom-button custom-right custom-hide-large custom-hide-medium" onclick="w3_open()">
+        <a href="javascript:void(0)" class="style-bar-item style-button style-hide-large style-hide-medium" style="float:right!important;" onclick="w3_open()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
-    <div class="custom-display-container custom-container" style="padding:24px 16px; margin-left:0px; margin-bottom:40px;float:left;">
-      <div class="custom-display-topleft custom-text-white" style="padding:24px 48px; margin-left:0px;float:left;">
+    <div class="style-display-container style-container" style="padding:24px 16px; margin-left:0px; margin-bottom:40px;float:left;">
+      <div class="style-display-topleft style-text-white" style="padding:24px 48px; margin-left:0px;float:left;">
         <p>
-          <a class="custom-grey custom-padding-large custom-medium" style="margin-left:0px;margin-top:25px;float:left;opacity:0.8;width:320px;">
+          <a class="style-grey padding-large style-medium" style="margin-left:0px;margin-top:25px;float:left;opacity:0.8;width:320px;">
             E-Commerce Consumption 2012-2017</a>
-          <a class="custom-grey custom-medium" style=" margin-left:0px;margin-top:5px;float:left;opacity:0.8;padding:4px 30px;width:290px;">
+          <a class="style-grey style-medium" style=" margin-left:0px;margin-top:5px;float:left;opacity:0.8;padding:4px 30px;width:290px;">
             Hover, or Click and Split...</a>
         </p>
       </div>
@@ -201,10 +49,10 @@
 
     <div class="container">
       <div id="toolbar">
-        <a href="#" id="all" class="button active custom-black custom-padding-small"
+        <a href="#" id="all" class="button active style-black padding-small"
         style="float:right;margin-top:80px;margin-right:20px">
           All E-Commerce Purchase</a>
-        <a href="#" id="year" class="button custom-black custom-padding-small"
+        <a href="#" id="year" class="button style-black padding-small"
         style="float:right;margin-top:80px;">
           By Year</a>
       </div>
@@ -448,7 +296,7 @@
         return x1 + x2;
       }
 
-      d3.csv('data/Bubble_eCommercePurchase copy.csv', display);
+      d3.csv('data/Bubble_eCommercePurchase.csv', display);
       //set up buttons when loading bubbles
       setupButtons();
     </script>
@@ -482,7 +330,7 @@
               clip-path: url("#clip-svg");
     }
   </style>
-  <footer class="custom-center custom-container custom-white" style="background:#FFF;">
+  <footer class="position-middle style-container style-white" style="background:#FFF;">
     <svg width="0" height="0" viewBox="0 0 216 216" style="color:red;">
         <path id="twitter" d="M214.6,0H1.4C0.6,0,0,0.6,0,1.4v213.1c0,0.8,0.6,1.4,1.4,1.4h213.1c0.8,0,1.4-0.6,1.4-1.4V1.4
             C216,0.6,215.4,0,214.6,0z M181,70.6c0.1,1.6,0.1,3.2,0.1,4.9c0,49.8-37.9,107.2-107.2,107.2c-21.3,0-41.1-6.2-57.7-16.9
